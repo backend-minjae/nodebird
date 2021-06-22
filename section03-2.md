@@ -1,7 +1,7 @@
 immer 도입하기
 ----
 
-```nodejs
+```node.js
 import producer from 'immer';
 
 
@@ -13,7 +13,7 @@ return produce(state, (draft)=>{
 
 ```
 state는 그대로 두고 draft만 사용   
-```nodejs
+```node.js
 // 이전 상태를 액션을 통해 다음 상태로 만들어내는 함수(불변성은 지키면서)
 const reducer = (state = initialState, action) => produce(state, (draft) => {
   switch (action.type) {
