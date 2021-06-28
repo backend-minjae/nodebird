@@ -2,6 +2,7 @@
 이미지 업로드
 ---
 ```node.js
+//파일을 보낼때 멀티파트로 데이터 형식을 보내야 하는데 
     <Form style={{ margin: '10px 0 20px' }} encType="multipart/form-data" onFinish={onSubmitForm}>
       <Input.TextArea maxLength={140} placeholder="어떤 신기한 일이 있었나요?" value={text} onChange={onChangeText} />
       <div>
@@ -20,9 +21,9 @@
         ))}
       </div>
     </Form>
-    ```
+```
     
-파일을 보낼때 멀티파트로 데이터 형식을 보내야 하는데 
+
 ```node.js
 const multer = require('multer');
 ```
